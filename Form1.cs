@@ -9,6 +9,14 @@ namespace LogoKaresz
 	{
 		void FELADAT()
 		{
+
+
+			Csik(100);
+
+
+
+			
+
 		}
 	}
 }
