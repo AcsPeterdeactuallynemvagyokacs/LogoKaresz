@@ -11,6 +11,7 @@ namespace LogoKaresz
 
 		void FELADAT()
 		{
+			kezdés(100);
 		}
 	}
 }
