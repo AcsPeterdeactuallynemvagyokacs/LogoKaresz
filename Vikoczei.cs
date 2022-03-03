@@ -11,6 +11,14 @@ namespace LogoKaresz
 {
     partial class Form1
     {
+        void gorbevegu(double meret)
+        {
 
+        }
+
+        void Csik(double meret)
+        {
+
+        }
     }
 }
