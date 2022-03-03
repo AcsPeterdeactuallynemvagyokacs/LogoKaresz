@@ -11,10 +11,23 @@ namespace LogoKaresz
 {
     public partial class Form1
     {
+        void virág(double méret)
+        {
+        }
+
         void kezdés(double méret)
         {
             Tollvastagság(2);
             using (new Átmenetileg(Előre, méret)){}
+            using (new Átmenetileg(Előre, (méret / 1.5)))
+            {
+                using (new Átmenetileg(Jobbra, 90))
+                {
+                    Ív(90, méret / 1.5);
+                }
+            }
+            using (new Átmenetileg(Előre, méret)){}
+            Balra(90);
             using (new Átmenetileg(Előre, méret / 3))
             {
                 using (new Átmenetileg(Jobbra, 90))
@@ -24,7 +37,10 @@ namespace LogoKaresz
             }
             using (new Átmenetileg(Balra, 45))
             {
-                Előre((méret / 3));
+                Előre((méret / 3) / 2);
+                using (new Átmenetileg(Előre, (méret / 3) / 2)){}
+                Balra(90);
+                Ív(90, ((méret / 3) / 2) - 3);
             }
         }
 
