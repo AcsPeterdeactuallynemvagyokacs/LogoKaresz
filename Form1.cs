@@ -7,6 +7,8 @@ namespace LogoKaresz
 {
 	public partial class Form1 : Form
 	{
+		// Ez az én branchom //
+
 		void FELADAT()
 		{
 		}
