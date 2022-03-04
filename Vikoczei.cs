@@ -183,7 +183,7 @@ namespace LogoKaresz
 
             Bezier(meret / 2, 90, 0, 60, meret * 0.6);
 
-            
+            spiral(meret);
             
             
 
@@ -195,19 +195,7 @@ namespace LogoKaresz
 
         void Csikbalra(double meret)
         {
-            Tollvastagság(2);
-
-            Előre(meret * 2);
-
-            Balra(90);
-
-            for (int i = 0; i < 2; i++)
-            {
-                Előre(meret);
-                Balra(90);
-                Előre(meret / 4);
-                Balra(90);
-            }
+            
 
 
         }
@@ -217,8 +205,70 @@ namespace LogoKaresz
         {
 
             Hátra(meret);
-            
+            Ív(180, meret / 2);
             Hátra(meret);
         }
+
+
+        void spiral(double meret)
+        {
+            Jobbra(40);
+
+            for (int i = 0; i < 180; i++)
+            {
+                Előre(meret / 300);
+                Jobbra(1);
+            }
+
+
+            Jobbra(30);
+
+            for (int i = 0; i < 60; i++)
+            {
+                Előre(meret / 300);
+                Jobbra(1);
+            }
+
+            Jobbra(30);
+
+            for (int i = 0; i < 60; i++)
+            {
+                Előre(meret / 300);
+                Jobbra(2);
+            }
+
+
+
+
+
+
+
+
+            for (int i = 0; i < 60; i++)
+            {
+                Hátra(meret / 300);
+                Balra(2);
+            }
+
+            Balra(30);
+
+            for (int i = 0; i < 60; i++)
+            {
+                Hátra(meret / 300);
+                Balra(1);
+            }
+
+            Balra(30);
+
+            for (int i = 0; i < 180; i++)
+            {
+                Hátra(meret / 300);
+                Balra(1);
+            }
+
+            Balra(40);
+        }
+
+
     }
 }
