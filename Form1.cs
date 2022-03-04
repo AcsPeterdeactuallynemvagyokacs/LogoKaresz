@@ -10,12 +10,14 @@ namespace LogoKaresz
 		void FELADAT()
 		{
 
-
-			Csik(100);
-
-
-
+			Csik(50);
+			Tulipan(50);
 			
+			
+
+
+
+
 
 		}
 	}
