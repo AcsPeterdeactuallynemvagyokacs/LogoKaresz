@@ -146,6 +146,9 @@ namespace LogoKaresz
 
             Ív(90, meret / 6);
 
+            
+
+
             Jobbra(90);
 
             Hátra(meret * 1.133333);
@@ -162,12 +165,14 @@ namespace LogoKaresz
             Tollat(fel);
 
             Ív(90, meret / 3);
+            
 
             Hátra(meret / 3 + meret / 3);
-
+            
             Tollat(le);
 
             Ív(90, meret / 3);
+            
 
             Jobbra(90);
 
@@ -183,7 +188,7 @@ namespace LogoKaresz
 
             Előre(meret);
 
-
+            
 
 
             Bezier(meret / 2, 90, 0, 60, meret * 0.6);
@@ -192,6 +197,7 @@ namespace LogoKaresz
 
             spiral(meret);
 
+            
 
             Tollat(fel);
 
@@ -216,19 +222,134 @@ namespace LogoKaresz
             Jobbra(90);
 
             Hátra(meret);
-
-
             
-
-            
-
-
-            
-
         }
 
 
+        void Tulipanbalra(double meret)
+        {
+            Hátra(meret * 2);
 
+            Tollat(fel);
+
+            Balra(90);
+
+            for (int i = 0; i < 2; i++)
+            {
+                Hátra(meret);
+
+                Jobbra(90);
+
+                Hátra(meret / 4);
+
+                Jobbra(90);
+            }
+
+
+            Jobbra(90);
+
+            Hátra(meret / 4);
+
+            Balra(90);
+
+            Hátra(meret / 4);
+
+            Balra(90);
+
+            
+
+            Hátra(meret / 6);
+            
+            Ív(270, meret / 12);
+
+
+            Tollat(le);
+
+            Jobbra(90);
+
+            Hátra(meret - meret * 0.3);
+
+            Tollat(fel);
+
+            Ív(270, meret / 6);
+
+            Tollat(le);
+
+            Ív(90, meret / 6);
+
+            Tollat(fel);
+            Ív(270, meret / 6);
+            Tollat(le);
+
+            Jobbra(90);
+
+            
+
+            Hátra(meret * 1.133333);
+
+
+            
+
+
+
+            Előre(meret);
+
+            Balra(90);
+            
+            
+
+            Ív(90, meret / 3);
+            
+            
+            
+            
+
+            Előre(meret / 3 + meret / 3 + meret / 3);
+
+           
+
+
+
+
+            Bezier(meret / 2, 90, 0, -60, meret * 0.6);
+
+
+            spiralbalra(meret);
+
+            
+
+            Tollat(fel);
+
+            Jobbra(30);
+
+            Előre(meret * 0.6);
+
+
+            
+
+
+            Tollat(le);
+
+            Jobbra(60);
+
+            Előre(meret);
+
+            Balra(180);
+            Tollat(fel);
+            Ív(270, meret / 3);
+            Tollat(le);
+
+
+            
+
+            Jobbra(90);
+
+            Hátra(meret);
+
+
+            Jobbra(180);
+            
+        }
 
 
         void Csikbalra(double meret)
@@ -379,6 +500,67 @@ namespace LogoKaresz
         }
 
 
+        void spiralbalra(double meret)
+        {
+            Balra(40);
+
+            for (int i = 0; i < 180; i++)
+            {
+                Hátra(meret / 300);
+                Balra(1);
+            }
+
+
+            Balra(30);
+
+            for (int i = 0; i < 60; i++)
+            {
+                Hátra(meret / 300);
+                Balra(1);
+            }
+
+            Balra(30);
+
+            for (int i = 0; i < 60; i++)
+            {
+                Hátra(meret / 300);
+                Balra(2);
+            }
+
+
+
+
+
+
+
+
+            for (int i = 0; i < 60; i++)
+            {
+                Jobbra(2);
+                Előre(meret / 300);
+            }
+
+            Jobbra(30);
+
+            for (int i = 0; i < 60; i++)
+            {
+                Jobbra(1);
+                Előre(meret / 300);
+            }
+
+            Jobbra(30);
+
+            for (int i = 0; i < 180; i++)
+            {
+                Jobbra(1);
+                Előre(meret / 300);
+            }
+
+            Jobbra(40);
+        }
+
+
+        
 
 
 
@@ -390,16 +572,24 @@ namespace LogoKaresz
             Csik(meret);
             Tulipan(meret);
 
+            
+
+            Csikbalra(meret);
+            Tulipanbalra(meret);
+
+
             Jobbra(180);
 
             Csik(meret);
             Tulipan(meret);
 
+
+            
+
             Csikbalra(meret);
+            Tulipanbalra(meret);
 
             Jobbra(180);
-
-            Csikbalra(meret);
         }
     }
 }
