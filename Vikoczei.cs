@@ -233,8 +233,65 @@ namespace LogoKaresz
 
         void Csikbalra(double meret)
         {
-            
 
+            Hátra(meret * 2);
+
+            Balra(90);
+
+            for (int i = 0; i < 2; i++)
+            {
+                Hátra(meret);
+
+                Jobbra(90);
+
+                Hátra(meret / 4);
+
+                Jobbra(90);
+            }
+
+            Jobbra(90);
+
+            Hátra(meret / 4);
+
+            Balra(90);
+
+            Hátra(meret / 4);
+
+            Balra(90);
+
+
+            gorbevegutestbalra(meret / 6);
+
+
+            Balra(90);
+
+            Hátra(meret / 6);
+
+            Hátra(meret * 0.4);
+
+            Balra(90);
+
+            gorbevegutestbalra(meret / 6);
+
+            Balra(90);
+
+            Hátra(meret / 6);
+
+            Hátra(meret / 4);
+
+            Balra(90);
+
+            gorbevegutestbalra(meret / 6);
+
+
+            Balra(90);
+
+            Előre(meret * 0.733333333333333333);
+
+            Jobbra(90);
+
+            Előre(meret * 2);
+            Előre(meret / 4);
 
         }
 
@@ -243,7 +300,21 @@ namespace LogoKaresz
         {
 
             Hátra(meret);
+
+            Tollat(fel);
+
             Ív(180, meret / 2);
+
+            Tollat(le);
+
+            Ív(180, meret / 2);
+
+            Tollat(fel);
+
+            Ív(180, meret / 2);
+
+            Tollat(le);
+
             Hátra(meret);
         }
 
@@ -309,12 +380,26 @@ namespace LogoKaresz
 
 
 
+
+
+
         void Ajto(double meret)
         {
-            Tollvastagság(2);
+            Tollvastagság(3);
 
             Csik(meret);
             Tulipan(meret);
+
+            Jobbra(180);
+
+            Csik(meret);
+            Tulipan(meret);
+
+            Csikbalra(meret);
+
+            Jobbra(180);
+
+            Csikbalra(meret);
         }
     }
 }

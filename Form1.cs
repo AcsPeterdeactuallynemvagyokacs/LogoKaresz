@@ -9,7 +9,7 @@ namespace LogoKaresz
 	{
 		void FELADAT()
 		{
-			Ajto(100);
+			Ajto(50);
 
 
 			
