@@ -99,14 +99,20 @@ namespace LogoKaresz
                         Előre(méret / 12);
                     }
                 }
-                Pihi(4000);
                 Balra(41);
 
                 Tollat(fel);
                 Hátra(méret * 2.884);
                 Tollat(le);
+
+                Tollat(fel);
+                Előre(méret / 10);
+                Tölt(Color.Black);
+                Hátra(méret / 10);
+                Tollat(le);
             } 
         }
+
         void kezdés(double méret)
         {
             Tollvastagság(2);
