@@ -11,7 +11,8 @@ namespace LogoKaresz
 
 		void FELADAT()
 		{
-			kezdés(100);
+			 // kezdés(100);
+			virág(100);
 		}
 	}
 }
