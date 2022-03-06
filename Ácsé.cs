@@ -51,18 +51,61 @@ namespace LogoKaresz
                     Előre(méret / 12);
                 }
                 Balra(49);
-                
+
                 Tollat(fel);
                 Hátra(méret * 2.884);
                 Tollat(le);
+
                 Balra(90);
                 Előre(méret / 10);
                 Hátra(méret / 10);
+                Jobbra(90);
 
+            using (new Átmenetileg(Jobbra, 90))
+                {
+                    Előre(méret / 10);
+                    for (int i = 0; i < 15; i++)
+                    {
+                        Balra(4);
+                        Előre(méret / 12);
+                    }
+                    for (int i = 0; i < 10; i++)
+                    {
+                        Jobbra(2);
+                        Előre(méret / 12);
+                    }
+                }
+                using (new Átmenetileg(Balra, 90))
+                {
+                    Előre(méret / 10);
+                    for (int i = 0; i < 15; i++)
+                    {
+                        Jobbra(3);
+                        Előre(méret / 12);
+                    }
+                    for (int i = 0; i < 7; i++)
+                    {
+                        Jobbra(20);
+                        Előre(méret / 12);
+                    }
+                    for (int i = 0; i < 19; i++)
+                    {
+                        Balra(6);
+                        Előre(méret / 12);
+                    }
+                    for (int i = 0; i < 5; i++)
+                    {
+                        Jobbra(2);
+                        Előre(méret / 12);
+                    }
+                }
+                Pihi(4000);
+                Balra(41);
 
-            }
-            
-            
+                Tollat(fel);
+                Hátra(méret * 2.884);
+                Tollat(le);
+            } 
         }
         void kezdés(double méret)
         {
