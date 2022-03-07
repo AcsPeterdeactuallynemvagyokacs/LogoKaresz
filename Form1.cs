@@ -7,10 +7,22 @@ namespace LogoKaresz
 {
 	public partial class Form1 : Form
 	{
-		// Ez az én branchom //
-
 		void FELADAT()
 		{
+
+			Teleport(350, 240);
+
+          
+            
+			Ajto(3, 50);
+			
+			
+
+			
+
+			
+
+
 
 			egészalap(200, 2);
 			Jobbra(90);
