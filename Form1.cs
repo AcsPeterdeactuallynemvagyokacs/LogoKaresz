@@ -12,10 +12,14 @@ namespace LogoKaresz
 
 			Teleport(350, 240);
 
+          
+            
 			Ajto(3, 50);
+			
 			
 
 			
+
 			
 
 
