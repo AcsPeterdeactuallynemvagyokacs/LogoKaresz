@@ -253,7 +253,6 @@ namespace LogoKaresz
         }
         void kezdés1(double méret)
         {
-            Tollvastagság(2);
             using (new Átmenetileg(Előre, méret)){}
             using (new Átmenetileg(Előre, (méret / 1.5)))
             {
@@ -282,7 +281,7 @@ namespace LogoKaresz
                 Előre(méret / 100);
             }
 
-            virág(méret / 20);
+            virág(méret / 18);
 
             for (int i = 0; i < 12; i++)
             {
@@ -305,7 +304,7 @@ namespace LogoKaresz
                 Előre(méret / 100);
             }
 
-            virág(méret / 20);
+            virág(méret / 18);
 
             for (int i = 0; i < 12; i++)
             {
@@ -329,10 +328,22 @@ namespace LogoKaresz
             Jobbra(90);
             Előre(méret / 3);
             Jobbra(90);
+
+            Előre(méret / 10);
+            Jobbra(90);
+            Ív(90, méret / 10);
+            Jobbra(90);
+            Előre(méret / 10);
+            Jobbra(135);
+            Tollat(fel);
+            Előre(méret / 20);
+            Tölt(Color.Black, false);
+            Hátra(méret / 20);
+            Tollat(le);
+            Balra(45);
         }
         void kezdés2(double méret)
         {
-            Tollvastagság(2);
             using (new Átmenetileg(Előre, méret)) { }
             Balra(90);
             using (new Átmenetileg(Előre, méret)) { }
@@ -362,7 +373,7 @@ namespace LogoKaresz
                 Előre(méret / 100);
             }
 
-            virág(méret / 20);
+            virág(méret / 18);
 
             for (int i = 0; i < 12; i++)
             {
@@ -385,7 +396,7 @@ namespace LogoKaresz
                 Előre(méret / 100);
             }
 
-            virág(méret / 20);
+            virág(méret / 18);
 
             for (int i = 0; i < 12; i++)
             {
@@ -408,11 +419,25 @@ namespace LogoKaresz
             Jobbra(90);
             Előre(méret / 3);
             Jobbra(90);
+
+            Előre(méret / 10);
+            Jobbra(90);
+            Ív(90, méret / 10);
+            Jobbra(90);
+            Előre(méret / 10);
+            Jobbra(135);
+            Tollat(fel);
+            Előre(méret / 20);
+            Tölt(Color.Black, false);
+            Hátra(méret / 20);
+            Tollat(le);
+            Balra(45);
         }
 
 
-        void egészalap(double méret)
+        public void egészalap(double méret, int tollvastagi)
         {
+            Tollvastagság(tollvastagi);
             kezdés1(méret);
             Jobbra(180);
             kezdés2(méret);
