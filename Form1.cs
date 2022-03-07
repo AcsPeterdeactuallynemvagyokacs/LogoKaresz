@@ -11,21 +11,9 @@ namespace LogoKaresz
 
 		void FELADAT()
 		{
-			Tollat(fel);
-			Előre(180);
-			Tollat(le);
 
-			//kezdés1(300);
-			//kezdés2(300);
-			//virág(100);
-
-			//
-			using (new Frissítés(false))
-			{
-				egészalap(200, 2);
-			}
+			egészalap(200, 2);
 			Jobbra(90);
-			/**/
 		}
 	}
 }
