@@ -25,7 +25,49 @@ namespace LogoKaresz
             Tollat(fel);
             Ív(180, méret / 2);
             Tollat(le);
-            Ív(180, méret / 2);
+            Ív(90, méret / 2);
+            Jobbra(90);
+            Előre(méret * 1.6);
+
+            Balra(90);
+            for (int i = 0; i < 50; i++)
+            {
+                Jobbra(2);
+                Előre(méret / 80);
+            }
+            Előre(méret / 10);
+            Balra(90);
+            Előre(méret / 5);
+            Hátra(méret / 5);
+            Jobbra(90);
+            Hátra(méret / 10);
+            for (int i = 0; i < 50; i++)
+            {
+                Hátra(méret / 80);
+                Balra(2);
+            }
+            Jobbra(180);
+            for (int i = 0; i < 50; i++)
+            {
+                Balra(2);
+                Előre(méret / 80);
+            }
+            Előre(méret / 10);
+            Jobbra(90);
+            Előre(méret / 5);
+            Hátra(méret / 5);
+            Balra(90);
+            Hátra(méret / 10);
+            for (int i = 0; i < 50; i++)
+            {
+                Hátra(méret / 80);
+                Jobbra(2);
+            }
+            Balra(90);
+
+            Hátra(méret * 1.6);
+            Balra(90);
+            Ív(90, méret / 2);
             Tollat(fel);
             Ív(180, méret / 2);
             Tollat(le);
@@ -236,39 +278,57 @@ namespace LogoKaresz
             Előre(méret / 2);
             for (int i = 0; i < 12; i++)
             {
-                Balra(7.5);
+                Balra(6);
                 Előre(méret / 100);
             }
+
             virág(méret / 20);
 
+            for (int i = 0; i < 12; i++)
+            {
+                Hátra(méret / 100);
+                Jobbra(6);
+            }
+
             // KIMEGY
+            Hátra(méret / 2);
 
+            // VIRÁG 2
+            // BEJÖN
 
+            Balra(90);
+            Előre(méret / 2);
 
-            /*
-            Jobbra(180);
+            for (int i = 0; i < 12; i++)
+            {
+                Jobbra(6);
+                Előre(méret / 100);
+            }
+
+            virág(méret / 20);
+
+            for (int i = 0; i < 12; i++)
+            {
+                Hátra(méret / 100);
+                Balra(6);
+            }
+
+            // KIMEGY
+            Hátra(méret / 2);
+
+            // POSZEIDON STUFF
             Előre(méret / 3);
             Jobbra(90);
+
             Ív(35, méret / 3);
             Balra(80);
             görbevégűtestbalra((méret / 3) / 3);
-            Előre((méret / 3) / 3);
-            Ív(90, ((méret / 3) / 3) / 2);
+            görbevégűtestjobbra((méret / 3) / 3);
+            Jobbra(80);
+            Ív(55, méret / 3);
             Jobbra(90);
-            Előre((méret / 3) / 1.8333333333);
-            Tollat(fel);
-            Hátra(méret / 3 + ((méret / 3) * 1.1) - (méret / 3));
-            Pihi(4000);
-            Jobbra(135);
-            Előre((méret / 3) / 17.0542);
-            Balra(90);
-            Előre((méret / 3) / 17.13288);
-            Tollat(le);
+            Előre(méret / 3);
             Jobbra(90);
-            /*/
-            
-
-
         }
         void kezdés2(double méret)
         {
@@ -292,44 +352,62 @@ namespace LogoKaresz
                 }
             }
 
-            Előre(méret / 2.1);
-            for (int i = 0; i < 5; i++)
+            // VIRÁG 1
+            // BEJÖN
+
+            Előre(méret / 2);
+            for (int i = 0; i < 12; i++)
             {
-                Balra(14);
-                Előre(méret / 36);
+                Balra(6);
+                Előre(méret / 100);
             }
-            virág(méret / 21);
-            Jobbra(90);
-            Tollat(fel);
-            Előre(méret / 40);
-            Tölt(Color.Black);
-            Hátra(méret / 40);
 
-            Jobbra(160);
-            Előre(méret / 11.38);
-            Jobbra(90);
-            Előre(méret / 1.74378);
+            virág(méret / 20);
 
-            Jobbra(90);
-            Tollat(le);
-            Előre(méret / 2.1);
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 12; i++)
             {
-                Jobbra(14);
-                Előre(méret / 36);
+                Hátra(méret / 100);
+                Jobbra(6);
             }
-            virág(méret / 21);
-            Jobbra(90);
-            Tollat(fel);
-            Előre(méret / 40);
-            Tölt(Color.Black);
-            Hátra(méret / 40);
 
-            Balra(160);
-            Előre(méret / 11.38);
+            // KIMEGY
+            Hátra(méret / 2);
+
+            // VIRÁG 2
+            // BEJÖN
+
             Balra(90);
-            Előre(méret / 1.74378);
-            Tollat(le);
+            Előre(méret / 2);
+
+            for (int i = 0; i < 12; i++)
+            {
+                Jobbra(6);
+                Előre(méret / 100);
+            }
+
+            virág(méret / 20);
+
+            for (int i = 0; i < 12; i++)
+            {
+                Hátra(méret / 100);
+                Balra(6);
+            }
+
+            // KIMEGY
+            Hátra(méret / 2);
+            // POSZEIDON STUFF
+            Előre(méret / 3);
+            Jobbra(90);
+
+            Ív(35, méret / 3);
+            Balra(80);
+            görbevégűtestbalra((méret / 3) / 3);
+            görbevégűtestjobbra((méret / 3) / 3);
+            Jobbra(80);
+            Ív(55, méret / 3);
+            Jobbra(90);
+            Előre(méret / 3);
+            Jobbra(90);
         }
 
 
