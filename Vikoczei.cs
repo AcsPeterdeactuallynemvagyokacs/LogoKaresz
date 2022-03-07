@@ -1026,5 +1026,8 @@ namespace LogoKaresz
 
             Tollvastagság(vastagsag);
         }
+
+
+        
     }
 }
