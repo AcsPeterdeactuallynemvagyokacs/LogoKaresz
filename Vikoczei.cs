@@ -680,9 +680,11 @@ namespace LogoKaresz
 
         }
 
-        void kisfelkor(int vastagsag, double meret)
+
+
+        void kisfelkor(double meret)
         {
-            Tollvastagság(vastagsag);
+            
             Előre(meret * 2 + meret / 4);
 
             Jobbra(40);
@@ -813,10 +815,11 @@ namespace LogoKaresz
             }
         }
 
-        void kupaalakugrbe(int vastagsag, double meret)
+        void kupaalakugorbe(int vastagsag, double meret)
         {
+            Tollvastagság(vastagsag);
 
-            kisfelkor(vastagsag, meret);
+            kisfelkor(meret);
 
             kozepsoresz(meret);
 
@@ -829,6 +832,154 @@ namespace LogoKaresz
             kisfelkor_vissza(meret);
         }
 
+
+
+        void kisfelkor_balra(double meret)
+        {
+            Hátra(meret * 2 + meret / 4);
+
+            Balra(40);
+
+            for (int i = 0; i < 30; i++)
+            {
+                Hátra(meret / 150);
+                Balra(1);
+            }
+
+            for (int i = 0; i < 45; i++)
+            {
+                Hátra(meret / 200);
+                Balra(3);
+            }
+
+
+            for (int i = 0; i < 45; i++)
+            {
+                Jobbra(3);
+                Előre(meret / 200);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Jobbra(1);
+                Előre(meret / 150);
+            }
+
+            Jobbra(40);
+        }
+
+
+        void kozepsoresz_balra(double meret)
+        {
+            Balra(30);
+
+            Hátra(meret / 3);
+
+            for (int i = 0; i < 45; i++)
+            {
+                Hátra(meret / 100);
+                Balra(0.5);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Hátra(meret / 300);
+                Jobbra(1);
+            }
+
+            for (int i = 0; i < 60; i++)
+            {
+                Hátra(meret / 100);
+
+                Jobbra(1);
+            }
+
+
+
+        }
+
+        void felsoresz_balra(double meret)
+        {
+
+
+            for (int i = 0; i < 120; i++)
+            {
+                Hátra(meret / 200);
+                Jobbra(2);
+            }
+
+            Jobbra(30);
+            Hátra(meret * 0.5);
+
+            for (int i = 0; i < 180; i++)
+            {
+                Hátra(meret / 400);
+                Balra(1);
+            }
+        }
+
+        void kisfelkor_vissza_balra(double meret)
+        {
+            Előre(meret * 2 + meret / 4);
+        }
+
+        void kozepsoresz_vissza_balra(double meret)
+        {
+            for (int i = 0; i < 60; i++)
+            {
+                Balra(1);
+                Előre(meret / 100);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Balra(1);
+                Előre(meret / 300);
+            }
+
+            for (int i = 0; i < 45; i++)
+            {
+                Jobbra(0.5);
+                Előre(meret / 100);
+            }
+
+            Előre(meret / 3);
+
+            Jobbra(30);
+        }
+
+        void felsoresz_vissza_balra(double meret)
+        {
+            for (int i = 0; i < 180; i++)
+            {
+                Jobbra(1);
+                Előre(meret / 400);
+            }
+
+            Előre(meret * 0.5);
+            Balra(30);
+
+            for (int i = 0; i < 120; i++)
+            {
+                Balra(2);
+                Előre(meret / 200);
+            }
+        }
+
+        void kupaalakugorbe_balra(double meret)
+        {
+            kisfelkor_balra(meret);
+
+            kozepsoresz_balra(meret);
+
+            felsoresz_balra(meret);
+
+            felsoresz_vissza_balra(meret);
+
+            kozepsoresz_vissza_balra(meret);
+
+            kisfelkor_vissza_balra(meret);
+        }
 
         void Ajto(int vastagsag, double meret)
         {
@@ -861,7 +1012,19 @@ namespace LogoKaresz
             Jobbra(180);
             vastagkor(vastagsag + 1, meret);
 
-            kupaalakugrbe(vastagsag - 1, meret);
+            kupaalakugorbe(vastagsag - 1, meret);
+
+            kupaalakugorbe_balra(meret);
+
+            Jobbra(180);
+
+            kupaalakugorbe(vastagsag - 1, meret);
+
+            kupaalakugorbe_balra(meret);
+
+            Jobbra(180);
+
+            Tollvastagság(vastagsag);
         }
     }
 }
