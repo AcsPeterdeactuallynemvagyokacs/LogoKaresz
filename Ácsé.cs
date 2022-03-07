@@ -104,12 +104,6 @@ namespace LogoKaresz
                 Tollat(fel);
                 Hátra(méret * 2.884);
                 Tollat(le);
-
-                Tollat(fel);
-                Előre(méret / 10);
-                Tölt(Color.Black);
-                Hátra(méret / 10);
-                Tollat(le);
             } 
         }
 
@@ -133,13 +127,20 @@ namespace LogoKaresz
                     Ív(90, méret / 3);
                 }
             }
-            using (new Átmenetileg(Balra, 45))
+            Előre(méret / 2.1);
+            for (int i = 0; i < 5; i++)
             {
-                Előre((méret / 3) / 2);
-                using (new Átmenetileg(Előre, (méret / 3) / 2)){}
-                Balra(90);
-                Ív(90, ((méret / 3) / 2) - 3);
+                    Balra(14);
+                    Előre(méret / 36);
             }
+            virág(méret / 21);
+            Jobbra(90);
+            Tollat(fel);
+            Előre(méret / 40);
+            Tölt(Color.Black);
+            Hátra(méret / 40);
+            Pihi(3000);
+ 
         }
 
     }
