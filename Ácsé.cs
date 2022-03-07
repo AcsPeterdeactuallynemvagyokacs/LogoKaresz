@@ -442,7 +442,6 @@ namespace LogoKaresz
             Jobbra(180);
             kezdés2(méret);
             Jobbra(90);
-            Pihi(1000);
             kezdés1(méret);
             Jobbra(180);
             kezdés2(méret);
