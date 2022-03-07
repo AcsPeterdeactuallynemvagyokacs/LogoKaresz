@@ -26,7 +26,7 @@ namespace LogoKaresz
 
         void Csik(double meret)
         {
-            
+
 
             Előre(meret * 2);
 
@@ -146,7 +146,7 @@ namespace LogoKaresz
 
             Ív(90, meret / 6);
 
-            
+
 
 
             Jobbra(90);
@@ -154,10 +154,10 @@ namespace LogoKaresz
             Hátra(meret * 1.133333);
 
 
-            
-            
-            
-            
+
+
+
+
             Előre(meret);
 
             Jobbra(90);
@@ -165,14 +165,14 @@ namespace LogoKaresz
             Tollat(fel);
 
             Ív(90, meret / 3);
-            
+
 
             Hátra(meret / 3 + meret / 3);
-            
+
             Tollat(le);
 
             Ív(90, meret / 3);
-            
+
 
             Jobbra(90);
 
@@ -188,16 +188,16 @@ namespace LogoKaresz
 
             Előre(meret);
 
-            
+
 
 
             Bezier(meret / 2, 90, 0, 60, meret * 0.6);
 
-            
+
 
             spiral(meret);
 
-            
+
 
             Tollat(fel);
 
@@ -222,7 +222,7 @@ namespace LogoKaresz
             Jobbra(90);
 
             Hátra(meret);
-            
+
         }
 
 
@@ -256,10 +256,10 @@ namespace LogoKaresz
 
             Balra(90);
 
-            
+
 
             Hátra(meret / 6);
-            
+
             Ív(270, meret / 12);
 
 
@@ -283,30 +283,30 @@ namespace LogoKaresz
 
             Jobbra(90);
 
-            
+
 
             Hátra(meret * 1.133333);
 
 
-            
+
 
 
 
             Előre(meret);
 
             Balra(90);
-            
-            
+
+
 
             Ív(90, meret / 3);
-            
-            
-            
-            
+
+
+
+
 
             Előre(meret / 3 + meret / 3 + meret / 3);
 
-           
+
 
 
 
@@ -316,7 +316,7 @@ namespace LogoKaresz
 
             spiralbalra(meret);
 
-            
+
 
             Tollat(fel);
 
@@ -325,7 +325,7 @@ namespace LogoKaresz
             Előre(meret * 0.6);
 
 
-            
+
 
 
             Tollat(le);
@@ -340,7 +340,7 @@ namespace LogoKaresz
             Tollat(le);
 
 
-            
+
 
             Jobbra(90);
 
@@ -348,7 +348,7 @@ namespace LogoKaresz
 
 
             Jobbra(180);
-            
+
         }
 
 
@@ -560,14 +560,24 @@ namespace LogoKaresz
         }
 
 
-        
 
-
-
-
-        void Ajto(double meret)
+        void vastagkor(int vastagsag, double meret)
         {
-            Tollvastagság(3);
+            
+
+            Előre(meret * 2.75);
+
+            Tollvastagság(vastagsag + 1);
+
+            Jobbra(90);
+
+        }
+
+
+
+        void Ajto(int vastagsag, double meret)
+        {
+            Tollvastagság(vastagsag);
 
             Csik(meret);
             Tulipan(meret);
