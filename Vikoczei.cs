@@ -559,7 +559,87 @@ namespace LogoKaresz
             Jobbra(40);
         }
 
+        void negyedkor(double meret, bool felkorrel)
+        {
+            for (int i = 0; i < 45; i++)
+            {
+                Előre(meret / 200);
+                Balra(1);
+            }
 
+            Jobbra(90);
+
+            Előre(meret / 10);
+            Hátra(meret / 10);
+
+            Balra(90);
+
+
+            for (int i = 0; i < 45; i++)
+            {
+                Előre(meret / 200);
+                Balra(1);
+            }
+
+
+            if (felkorrel)
+            {
+                Jobbra(90);
+
+                Előre(meret / 4);
+
+
+                Jobbra(90);
+
+                for (int i = 0; i < 90; i++)
+                {
+                    Előre(meret / 400);
+                    Balra(1);
+                }
+
+                Előre(meret * 0.3);
+                Hátra(meret * 0.3);
+
+                for (int i = 0; i < 90; i++)
+                {
+                    Hátra(meret / 400);
+                    Jobbra(1);
+                }
+
+                Balra(90);
+
+                Balra(90);
+
+
+
+
+
+
+
+
+                for (int i = 0; i < 90; i++)
+                {
+                    Előre(meret / 400);
+                    Jobbra(1);
+                }
+
+                Előre(meret * 0.3);
+                Hátra(meret * 0.3);
+
+                for (int i = 0; i < 90; i++)
+                {
+                    Hátra(meret / 400);
+                    Balra(1);
+                }
+
+                Jobbra(90);
+
+                Hátra(meret / 4);
+
+                Balra(90);
+            }
+            
+        }
 
         void vastagkor(int vastagsag, double meret)
         {
@@ -567,9 +647,36 @@ namespace LogoKaresz
 
             Előre(meret * 2.75);
 
-            Tollvastagság(vastagsag + 1);
+            Tollvastagság(vastagsag + 2);
 
             Jobbra(90);
+
+
+            negyedkor(meret, true);
+            negyedkor(meret, false);
+            negyedkor(meret, true);
+            negyedkor(meret, false);
+
+            Balra(90);
+
+            Előre(meret * 0.58);
+            Hátra(meret * 0.29);
+
+            Jobbra(90);
+            Előre(meret * 0.29);
+            Hátra(meret * 0.58);
+
+            Előre(meret * 0.29);
+
+            Balra(90);
+
+            Hátra(meret * 0.29);
+
+            Tollvastagság(vastagsag);
+
+            Hátra(meret * 2.75);
+            
+            
 
         }
 
@@ -599,7 +706,13 @@ namespace LogoKaresz
             Csikbalra(meret);
             Tulipanbalra(meret);
 
+            
+
+            vastagkor(vastagsag + 1, meret);
             Jobbra(180);
+            vastagkor(vastagsag + 1, meret);
+
+            
         }
     }
 }

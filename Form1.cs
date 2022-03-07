@@ -9,14 +9,10 @@ namespace LogoKaresz
 	{
 		void FELADAT()
 		{
-			/*
+			
 			Ajto(3, 50);
-			*/
-			Tollvastagság(3);
-			Csik(50);
-			Tulipan(50);
-
-			vastagkor(3, 50);
+			
+			
 
 
 		}
