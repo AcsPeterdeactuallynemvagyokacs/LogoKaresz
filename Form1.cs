@@ -9,7 +9,11 @@ namespace LogoKaresz
 	{
 		void FELADAT()
 		{
+
+			Teleport(350, 240);
+
 			Ajto(3, 50);
+			
 
 			
 			
