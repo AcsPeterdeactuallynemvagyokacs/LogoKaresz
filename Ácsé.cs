@@ -33,98 +33,181 @@ namespace LogoKaresz
         }
         void virág(double méret)
         {
-            using (new Átmenetileg(Balra, 90))
+            Balra(90);
+            Előre(méret / 5);
+
+
+            for (int i = 0; i < 15; i++)
             {
-                Előre(méret / 10);
-                for (int i = 0; i < 15; i++)
-                {
-                    Jobbra(4);
-                    Előre(méret / 12);
-                }
-                for (int i = 0; i < 10; i++)
-                {
-                    Balra(2);
-                    Előre(méret / 12);
-                }
+                Jobbra(4);
+                Előre(méret / 12);
             }
-            using (new Átmenetileg(Jobbra, 90))
+            Jobbra(130);
+
+            //
+            for (int i = 0; i < 10; i++)
             {
-                Előre(méret / 10);
-                for (int i = 0; i < 15; i++)
-                {
-                    Balra(3);
-                    Előre(méret / 12);
-                }
-                for (int i = 0; i < 7; i++)
-                {
-                    Balra(20);
-                    Előre(méret / 12);
-                }
-                for (int i = 0; i < 19; i++)
-                {
-                    Jobbra(6);
-                    Előre(méret / 12);
-                }
-                for (int i = 0; i < 5; i++)
-                {
-                    Balra(2);
-                    Előre(méret / 12);
-                }
-                Balra(49);
+                Balra(2);
+                Előre(méret / 12);
+            }
 
-                Tollat(fel);
-                Hátra(méret * 2.884);
-                Tollat(le);
+            for (int i = 0; i < 10; i++)
+            {
+                Balra(12);
+                Előre(méret / 24);
+            }
 
-                Balra(90);
-                Előre(méret / 10);
-                Hátra(méret / 10);
-                Jobbra(90);
+            for (int i = 0; i < 15; i++)
+            {
+                Jobbra(4);
+                Előre(méret / 24);
+            }
 
-            using (new Átmenetileg(Jobbra, 90))
-                {
-                    Előre(méret / 10);
-                    for (int i = 0; i < 15; i++)
-                    {
-                        Balra(4);
-                        Előre(méret / 12);
-                    }
-                    for (int i = 0; i < 10; i++)
-                    {
-                        Jobbra(2);
-                        Előre(méret / 12);
-                    }
-                }
-                using (new Átmenetileg(Balra, 90))
-                {
-                    Előre(méret / 10);
-                    for (int i = 0; i < 15; i++)
-                    {
-                        Jobbra(3);
-                        Előre(méret / 12);
-                    }
-                    for (int i = 0; i < 7; i++)
-                    {
-                        Jobbra(20);
-                        Előre(méret / 12);
-                    }
-                    for (int i = 0; i < 19; i++)
-                    {
-                        Balra(6);
-                        Előre(méret / 12);
-                    }
-                    for (int i = 0; i < 5; i++)
-                    {
-                        Jobbra(2);
-                        Előre(méret / 12);
-                    }
-                }
-                Balra(41);
+            for (int i = 0; i < 10; i++)
+            {
+                Jobbra(5);
+                Előre(méret / 24);
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                Balra(2);
+                Előre(méret / 24);
+            }
 
-                Tollat(fel);
-                Hátra(méret * 2.884);
-                Tollat(le);
-            } 
+            ////
+
+            for (int i = 0; i < 4; i++)
+            {
+                Hátra(méret / 24);
+                Jobbra(2);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Hátra(méret / 24);
+                Balra(5);
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                Hátra(méret / 24);
+                Balra(4);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Hátra(méret / 24);
+                Jobbra(12);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Hátra(méret / 12);
+                Jobbra(2);
+            }
+
+            Balra(130);
+            for (int i = 0; i < 15; i++)
+            {
+                Hátra(méret / 12);
+                Balra(4);
+            }
+
+            Hátra(méret / 5);
+
+            /////
+            
+            Jobbra(180);
+
+            Előre(méret / 5);
+
+
+            for (int i = 0; i < 15; i++)
+            {
+                Balra(4);
+                Előre(méret / 12);
+            }
+            Balra(130);
+
+            //
+            for (int i = 0; i < 10; i++)
+            {
+                Jobbra(2);
+                Előre(méret / 12);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Jobbra(12);
+                Előre(méret / 24);
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                Balra(4);
+                Előre(méret / 24);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Balra(5);
+                Előre(méret / 24);
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                Jobbra(2);
+                Előre(méret / 24);
+            }
+
+            ////
+
+            for (int i = 0; i < 4; i++)
+            {
+                Hátra(méret / 24);
+                Balra(2);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Hátra(méret / 24);
+                Jobbra(5);
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                Hátra(méret / 24);
+                Jobbra(4);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Hátra(méret / 24);
+                Balra(12);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Hátra(méret / 12);
+                Balra(2);
+            }
+
+            Jobbra(130);
+            for (int i = 0; i < 15; i++)
+            {
+                Hátra(méret / 12);
+                Jobbra(4);
+            }
+
+            Hátra(méret / 5);
+
+            Balra(90);
+
+            Tollat(fel);
+            Előre(méret / 3);
+            Tölt(Color.Black, false);
+            Hátra(méret / 3);
+            Tollat(le);
+            /**/
         }
         void kezdés1(double méret)
         {
@@ -147,46 +230,20 @@ namespace LogoKaresz
                 }
             }
 
+            // VIRÁG 1
+            // BEJÖN
 
-            Előre(méret / 2.1);
-            for (int i = 0; i < 5; i++)
+            Előre(méret / 2);
+            for (int i = 0; i < 12; i++)
             {
-                Balra(14);
-                Előre(méret / 36);
+                Balra(7.5);
+                Előre(méret / 100);
             }
-            virág(méret / 21);
-            Jobbra(90);
-            Tollat(fel);
-            Előre(méret / 40);
-            Tölt(Color.Black);
-            Hátra(méret / 40);
+            virág(méret / 20);
 
-            Jobbra(160);
-            Előre(méret / 11.38);
-            Jobbra(90);
-            Előre(méret / 1.74378);
-
-            Jobbra(90);
-            Tollat(le);
-            Előre(méret / 2.1);
-            for (int i = 0; i < 5; i++)
-            {
-                Jobbra(14);
-                Előre(méret / 36);
-            }
-            virág(méret / 21);
-            Jobbra(90);
-            Tollat(fel);
-            Előre(méret / 40);
-            Tölt(Color.Black);
-            Hátra(méret / 40);
+            // KIMEGY
 
 
-            Balra(160);
-            Előre(méret / 11.38);
-            Balra(90);
-            Előre(méret / 1.74378);
-            Tollat(le);
 
             /*
             Jobbra(180);
