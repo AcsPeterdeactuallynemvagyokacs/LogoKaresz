@@ -647,7 +647,7 @@ namespace LogoKaresz
 
             Előre(meret * 2.75);
 
-            Tollvastagság(vastagsag + 2);
+            Tollvastagság(vastagsag + 1);
 
             Jobbra(90);
 
@@ -680,10 +680,159 @@ namespace LogoKaresz
 
         }
 
+        void kisfelkor(int vastagsag, double meret)
+        {
+            Tollvastagság(vastagsag);
+            Előre(meret * 2 + meret / 4);
+
+            Jobbra(40);
+
+            for (int i = 0; i < 30; i++)
+            {
+                Előre(meret / 150);
+                Jobbra(1);
+            }
+
+            for (int i = 0; i < 45; i++)
+            {
+                Előre(meret / 200);
+                Jobbra(3);
+            }
+
+
+            for (int i = 0; i < 45; i++)
+            {
+                Balra(3);
+                Hátra(meret / 200);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Balra(1);
+                Hátra(meret / 150);
+            }
+
+            Balra(40);
+        }
+
+
+        void kisfelkor_vissza(double meret)
+        {
+            Hátra(meret * 2 + meret / 4);
+        }
+
+        void kozepsoresz(double meret)
+        {
+            Jobbra(30);
+
+            Előre(meret / 3);
+            
+            for (int i = 0; i < 45; i++)
+            {
+                Előre(meret / 100);
+                Jobbra(0.5);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Előre(meret / 300);
+                Balra(1);
+            }
+
+            for (int i = 0; i < 60; i++)
+            {
+                Előre(meret / 100);
+
+                Balra(1);
+            }
+            
+
+            
+        }
+
+        void kozepsoresz_vissza(double meret)
+        {
+            for (int i = 0; i < 60; i++)
+            {
+                Jobbra(1);
+                Hátra(meret / 100);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Jobbra(1);
+                Hátra(meret / 300);
+            }
+
+            for (int i = 0; i < 45; i++)
+            {
+                Balra(0.5);
+                Hátra(meret / 100);
+            }
+
+            Hátra(meret / 3);
+
+            Balra(30);
+        }
+
+        void felsoresz(double meret)
+        {
+            
+
+            for (int i = 0; i < 120; i++)
+            {
+                Előre(meret / 200);
+                Balra(2);
+            }
+
+            Balra(30);
+            Előre(meret * 0.5);
+
+            for (int i = 0; i < 180; i++)
+            {
+                Előre(meret / 400);
+                Jobbra(1);
+            }
+        }
+
+        void felsoresz_vissza(double meret)
+        {
+            for (int i = 0; i < 180; i++)
+            {
+                Balra(1);
+                Hátra(meret / 400);
+            }
+
+            Hátra(meret * 0.5);
+            Jobbra(30);
+
+            for (int i = 0; i < 120; i++)
+            {
+                Jobbra(2);
+                Hátra(meret / 200);
+            }
+        }
+
+        void kupaalakugrbe(int vastagsag, double meret)
+        {
+
+            kisfelkor(vastagsag, meret);
+
+            kozepsoresz(meret);
+
+            felsoresz(meret);
+
+            felsoresz_vissza(meret);
+
+            kozepsoresz_vissza(meret);
+
+            kisfelkor_vissza(meret);
+        }
 
 
         void Ajto(int vastagsag, double meret)
         {
+
             Tollvastagság(vastagsag);
 
             Csik(meret);
@@ -712,7 +861,7 @@ namespace LogoKaresz
             Jobbra(180);
             vastagkor(vastagsag + 1, meret);
 
-            
+            kupaalakugrbe(vastagsag - 1, meret);
         }
     }
 }
